@@ -8,21 +8,14 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Abel&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
         rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <!-- Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
    
 </head>
@@ -44,10 +37,10 @@
                         <li><span class="tabler--user"></span>Sign In</li>
                     </ul>
                     <ul class="d-flex justify-content-end">
-
                         <li class="nav-item">
-                            <a class="" id="dropdownToggle">Book & Manage</a>
+                            <a href="#" id="dropdownToggle">Book & Manage</a>
                         </li>
+                    
 
                         <li class="nav-item">
                             <a class="" id="dropdownToggle2">Where We Fly</a>
@@ -60,238 +53,54 @@
                         </li>
                         <li class="nav-item">
                             <a class="" id="dropdownToggle5">Maharaja Club <span
-                                    class="badge bg-warning text-dark">NEW</span></a>
+                                    class="badge bg-warning text-dark" style="margin-right: 113px; margin-top: 60px;width: 34px; font-size: 10px;">NEW</span></a>
                         </li>
 
                     </ul>
-                </div>
-            </div>
-    </div>
-    </nav>
-    <!-- Sub Header -->
-    <section class="container">
-        <div class="button-sub d-flex justify-content-between">
-            <div class="button-sub d-flex">
-                <button type="button" class="btn"
-                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                    Search Flights
-                </button>
-                <button type="button" class="btn "
-                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                    MAnage Booking
-                </button>
-
-                <button type="button" class="btn "
-                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                    Check In
-                </button>
-                <button type="button" class="btn" style="color: red;">
-                    Flight status
-                </button>
-            </div>
-            <div class="btn-right">
-                <button type="button" class="btn "
-                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                    <span class="mingcute--announcement-line"></span> Exclusive Deals
-                </button>
-            </div>
-        </div>
-    </section>
-    <!-- Flight status -->
-    <section>
-        <div class="container justify-content-around">
-            <div class="form-container">
-                <input type="text" class="input-box" placeholder="Flight Number">
-                <!-- <input type="datetime-local" class="input-box" placeholder="Select Date"> -->
-                <select class="input-box" id="inputGroupSelect01">
-                    <option selected disabled><span style="color: grey;">Select Date</span></option>
-                    <option value="1">15 March 2025</option>
-                    <option value="2">16 March 2025</option>
-                    <option value="3">17 March 2025</option>
-                    <option value="3">18 March 2025</option>
-                    <option value="3">19 March 2025</option>
-                </select>
-
-                <button class="submit-btn">SHOW FLIGHTS</button>
-            </div>
-            <p class="status-p"><span class="fluent--important-12-filled"></span>Eg: AI 985</p>
-        </div>
-
-    </section>
-    <!-- carosel -->
-    <section>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel"
-            data-bs-interval="1000">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="https://airindia.scene7.com/is/image/airindia/web-home-hp-banner-exclusive-deals"
-                        class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="https://airindia.scene7.com/is/image/airindia/point-plus-hp-web:Large2x"
-                        class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://airindia.scene7.com/is/image/airindia/lp-web-upgraded-product:Large2x"
-                        class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://airindia.scene7.com/is/image/airindia/web-upgrade-plus:Large2x"
-                        class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>fourth slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-    <!-- Gallery -->
-    <section>
-        <div class="container-fluid">
-            <div class="gallery-head">
-                <h1>A CLASS APART. IT’S THE NEW STANDARD.</h1>
-                <p>Discover our world of exclusive offers and services that change the way you travel.</p>
-            </div>
-            <div class="gallery-content">
-                <div class="gallery w-100">
-                    <img src="./images/transition/AIEstore-1.avif" alt="Image 1">
-                    <img src="./images/transition/Ask_Agent-1.avif" alt="Image 2">
-                    <img src="./images/transition/landing-loyalty-nudge.avif" alt="Image 3">
-                    <img src="./images/transition/star-alliance-2.avif" alt="Image 4">
-                    <img src="./images/transition/Mumbai_to_NYC_Mob_Clr.avif" alt="Image 5">
-                </div>
-            </div>
-        </div>
-    </section>
 
 
-    <!-- Footer -->
+                    
+                </div>
+            </div>
+        </nav>
+        <br>
+        <br>
+ <!-- Full-Width Dropdown Content -->
+ <div class="mega-menu container-fluid" id="dropdownMenu">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-md-4">
+                <h5>Booking</h5>
                 <ul>
-                    <li>Sitemap </li>
-                    <li> Terms & Conditions</li>
-                    <li>Privacy & policy</li>
-                    <li> Accessibility Plan and Feedback Process</li>
+                    <li><a href="#">Book a Flight</a></li>
+                    <li><a href="#">Manage Booking</a></li>
+                    <li><a href="#">Flight Status</a></li>
+                    <li><a href="#">Check-in Online</a></li>
                 </ul>
             </div>
-            <div class="col">
+            <div class="col-md-4">
+                <h5>Travel Info</h5>
                 <ul>
-                    <li> Cookie Policy</li>
-                    <li>Cookie Settings</li>
-                    <li>Conditions of Carriage</li>
-                    <li>Domestic Fares</li>
+                    <li><a href="#">Baggage Policy</a></li>
+                    <li><a href="#">Visa & Documents</a></li>
+                    <li><a href="#">Special Assistance</a></li>
+                    <li><a href="#">Airport Services</a></li>
                 </ul>
             </div>
-            <div class="col">
-                <li>Travel Agents</li>
-                <li>GST</li>
-                <li>Passenger Rights</li>
-                <li>Disruption Statement</li>
-
-            </div>
-            <div class="col">
-                <h3>Contact Us</h3>
-            </div>
-        </div>
-
-
-
-
-
-        <br>
-        <div class="dotted-line"></div>
-        <div class="logos d-flex justify-content-between">
-            <div class="tata">
-                <img src="./images/Tata_logo.svg" alt="">
-            </div>
-            <div class="right-logo">
-                <img src="./images/AI_Logo_Red_New.svg" alt="">
-                <img style="width: 250px;" src="./images/AIStar.svg" alt="">
-            </div>
-        </div>
-        <div class="dotted-line"></div>
-        <br>
-        <div class="copyright">
-            <p>Copyright © 2025 Air India Ltd.</p>
-            <p>All rights reserved. Use of this website indicates your compliance with our Privacy Policy, Conditions of
-                Carriage, Terms and Conditions.
-
-            </p>
-        </div>
-    </div>
-
-    </div>
-
-
-    <!-- Full-Width Dropdown Content -->
-    <div class="mega-menu container-fluid" id="dropdownMenu">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>Booking</h5>
-                    <ul>
-                        <li><a href="#">Book a Flight</a></li>
-                        <li><a href="#">Manage Booking</a></li>
-                        <li><a href="#">Flight Status</a></li>
-                        <li><a href="#">Check-in Online</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Travel Info</h5>
-                    <ul>
-                        <li><a href="#">Baggage Policy</a></li>
-                        <li><a href="#">Visa & Documents</a></li>
-                        <li><a href="#">Special Assistance</a></li>
-                        <li><a href="#">Airport Services</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Offers & Deals</h5>
-                    <ul>
-                        <li><a href="#">Current Promotions</a></li>
-                        <li><a href="#">Holiday Packages</a></li>
-                        <li><a href="#">Student Discounts</a></li>
-                        <li><a href="#">Loyalty Program</a></li>
-                    </ul>
-                </div>
+            <div class="col-md-4">
+                <h5>Offers & Deals</h5>
+                <ul>
+                    <li><a href="#">Current Promotions</a></li>
+                    <li><a href="#">Holiday Packages</a></li>
+                    <li><a href="#">Student Discounts</a></li>
+                    <li><a href="#">Loyalty Program</a></li>
+                </ul>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Full-Width Dropdown Content where we fly -->
+<!-- Full-Width Dropdown Content where we fly -->
     <div class="mega-menu container-fluid" id="dropdownMenu2">
         <div class="container">
             <div class="row">
@@ -324,10 +133,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 
-    <!-- Full-Width Dropdown Content prepare to travel -->
-    <div class="mega-menu container-fluid" id="dropdownMenu3">
+     <!-- Full-Width Dropdown Content prepare to travel -->
+     <div class="mega-menu container-fluid" id="dropdownMenu3">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -359,8 +168,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Full-Width Dropdown Content Air India Experience-->
+    </div> 
+     <!-- Full-Width Dropdown Content Air India Experience-->
     <div class="mega-menu container-fluid" id="dropdownMenu4">
         <div class="container">
             <div class="row">
@@ -393,9 +202,10 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Maharaja Club -->
-    <div class="mega-menu container-fluid" id="dropdownMenu5">
+    </div> 
+    
+ <!-- Maharaja Club -->
+   <div class="mega-menu container-fluid" id="dropdownMenu5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -427,89 +237,234 @@
                 </div>
             </div>
         </div>
+    </div> 
+    
+ <!-- Sub Header -->
+ <section class="container">
+    <div class="button-sub d-flex justify-content-between">
+        <div class="button-sub d-flex">
+            <button type="button" class="btn"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Search Flights
+            </button>
+            <button type="button" class="btn "
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                MAnage Booking
+            </button>
+
+            <button type="button" class="btn "
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Check In
+            </button>
+            <button type="button" class="btn" style="color: red;">
+                Flight status
+            </button>
+        </div>
+        <div class="btn-right">
+            <button type="button" class="btn "
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                <span class="mingcute--announcement-line"></span> Exclusive Deals
+            </button>
+        </div>
+    </div>
+</section>
+ <!-- Flight status -->
+ <section>
+    <div class="container justify-content-around">
+        <div class="form-container">
+            <input type="text" class="input-box" placeholder="Flight Number">
+            <!-- <input type="datetime-local" class="input-box" placeholder="Select Date"> -->
+            <select class="input-box" id="inputGroupSelect01">
+                <option selected disabled><span style="color: grey;">Select Date</span></option>
+                <option value="1">15 March 2025</option>
+                <option value="2">16 March 2025</option>
+                <option value="3">17 March 2025</option>
+                <option value="3">18 March 2025</option>
+                <option value="3">19 March 2025</option>
+            </select>
+
+            <button class="submit-btn">SHOW FLIGHTS</button>
+        </div>
+        <p class="status-p"><span class="fluent--important-12-filled"></span>Eg: AI 985</p>
     </div>
 
+</section>
+   <!-- carosel -->
+    <section>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel"
+        data-bs-interval="1000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img  src="https://airindia.scene7.com/is/image/airindia/web-home-hp-banner-exclusive-deals"
+                    class="d-block w-100" alt="...">
+                <div id="carousel-content" class="carousel-caption d-none d-md-block">
+                    <img id="carosel-logo" src="https://airindia.scene7.com/is/image/airindia/exclusive-deals-logo?fmt=png-alpha&bfc=on" alt="">
+                    <h1 class="fade-in-text"style="color: white;">THE BEST OFFERS,<br>ALL IN ONE PLACE</h1>
+                    <p class="fade-in-text" style="color: white;">Some representative placeholder content for the first slide.</p>
+                    <br>
+                    <button  class="submit-btn">KNOW MORE</button>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://airindia.scene7.com/is/image/airindia/point-plus-hp-web:Large2x"
+                    class="d-block w-100" alt="...">
+                <div  id="carousel-content" class="carousel-caption d-none d-md-block">
+                    <h1 class="fade-in-text" style="color: white;">UNLOCK 1 MILLION BONUS MAHARAJA POINTS*</h1>
+                    <p class="fade-in-text" style="color: white;">Offer ends on 31 March 2025 | *T&C Apply</p>
+                    <button  class="submit-btn">KNOW MORE</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://airindia.scene7.com/is/image/airindia/lp-web-upgraded-product:Large2x"
+                    class="d-block w-100" alt="...">
+                <div id="carousel-content"  class="carousel-caption d-none d-md-block">
+                    <h1 class="fade-in-text" style="color: white;">FLY THE ALL-NEW
+                        <br>AIR INDIA</h1>
+                    <p class="fade-in-text" style="color: white;">Enjoy world class features on our upgraded aircraft</p>
+                    <button  class="submit-btn">KNOW MORE</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://airindia.scene7.com/is/image/airindia/web-upgrade-plus:Large2x"
+                    class="d-block w-100" alt="...">
+                <div id="carousel-content"  class="carousel-caption d-none d-md-block">
+                    <h1 class="fade-in-text" style="color: white;">UPGRADE MADE <br>
+                         AFFORDABLE TRY  <br> UPGRADE+</h1>
+                    <p class="fade-in-text" style="color: white;">Some representative placeholder content for the third slide.</p>
+                    <button  class="submit-btn">KNOW MORE</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section> 
+<a href="#" class="floating-button">
+    <span class="hand-wave">👋🏻</span> 
+    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar"> 
+</a>
 
+<!-- Add FontAwesome for icons -->
+<script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+
+ <!-- Gallery -->
+ <section class="gallery">
+    <div class="gradient-bg ">
+        <div class="gallery-head">
+            <br><br>
+            <h1>A CLASS APART. IT’S THE NEW STANDARD.</h1>
+            <p>Discover our world of exclusive offers and services that change the way you travel.</p>
+        </div>
+        <div class="gallery-content">
+            <div class="gallery w-100">
+                <img src="./images/transition/AIEstore-1.avif" alt="Image 1">
+                <img src="./images/transition/Ask_Agent-1.avif" alt="Image 2">
+                <img src="./images/transition/landing-loyalty-nudge.avif" alt="Image 3">
+                <img src="./images/transition/star-alliance-2.avif" alt="Image 4">
+                <img src="./images/transition/Mumbai_to_NYC_Mob_Clr.avif" alt="Image 5">
+            </div>
+        </div>
+    </div>
+</section>
+
+<br><br><br>
+
+
+ <!-- Footer -->
+ <div class="container">
+    <div class="row">
+        <div class="col">
+            <ul>
+                <li>Sitemap </li>
+                <li> Terms & Conditions</li>
+                <li>Privacy & policy</li>
+                <li> Accessibility Plan and Feedback Process</li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul>
+                <li> Cookie Policy</li>
+                <li>Cookie Settings</li>
+                <li>Conditions of Carriage</li>
+                <li>Domestic Fares</li>
+            </ul>
+        </div>
+        <div class="col">
+            <li>Travel Agents</li>
+            <li>GST</li>
+            <li>Passenger Rights</li>
+            <li>Disruption Statement</li>
+
+        </div>
+        <div class="col">
+            <h3>FOLLOW US ON</h3>
+            <span class="codex--linkedin"></span>
+            <span  style="width: 30px; height: 25px;" class="ph--youtube-logo-light"></span>
+            <span class="mingcute--twitter-line"></span>
+            <span class="bxl--instagram"></span>
+        </div>
+    </div>
+
+    <br>
+    <div class="dotted-line"></div>
+    <div class="logos d-flex justify-content-between">
+        <div class="tata">
+            <img src="./images/Tata_logo.svg" alt="">
+        </div>
+        <div class="right-logo">
+            <img src="./images/AI_Logo_Red_New.svg" alt="">
+            <img style="width: 250px;" src="./images/AIStar.svg" alt="">
+        </div>
+    </div>
+    <div class="dotted-line"></div>
+    <br>
+    <div class="copyright">
+        <p>Copyright © 2025 Air India Ltd.</p>
+        <p>All rights reserved. Use of this website indicates your compliance with our Privacy Policy, Conditions of
+            Carriage, Terms and Conditions.
+
+        </p>
+    </div>
+</div>
+
+
+
+
+    </div>
     <script>
-        // JavaScript to toggle dropdown on button click
-        document.getElementById('dropdownToggle').addEventListener('click', function () {
-            var dropdown = document.getElementById('dropdownMenu');
-            dropdown.classList.toggle('show');
-        });
-        document.getElementById('dropdownToggle2').addEventListener('click', function () {
-            var dropdown = document.getElementById('dropdownMenu2');
-            dropdown.classList.toggle('show');
-        });
-
-        // prepare to travel
-        document.getElementById('dropdownToggle3').addEventListener('click', function () {
-            var dropdown = document.getElementById('dropdownMenu3');
-            dropdown.classList.toggle('show');
-        });
-
-        // Air India Experience
-        document.getElementById('dropdownToggle4').addEventListener('click', function () {
-            var dropdown = document.getElementById('dropdownMenu4');
-            dropdown.classList.toggle('show');
-        });
-        // Maharaja Club
-        document.getElementById('dropdownToggle5').addEventListener('click', function () {
-            var dropdown = document.getElementById('dropdownMenu5');
-            dropdown.classList.toggle('show');
-        });
-        // Hide dropdown if clicked outside
-        document.addEventListener('click', function (event) {
-            var isClickInside = document.getElementById('dropdownToggle').contains(event.target) || document.getElementById('dropdownMenu').contains(event.target);
-            if (!isClickInside) {
-                document.getElementById('dropdownMenu').classList.remove('show');
-            }
-        });
-        // where we fly
-        document.addEventListener('click', function (event) {
-            var isClickInside = document.getElementById('dropdownToggle2').contains(event.target) || document.getElementById('dropdownMenu2').contains(event.target);
-            if (!isClickInside) {
-                document.getElementById('dropdownMenu2').classList.remove('show');
-            }
-        });
-        // prepare to travel
-        document.addEventListener('click', function (event) {
-            var isClickInside = document.getElementById('dropdownToggle3').contains(event.target) || document.getElementById('dropdownMenu3').contains(event.target);
-            if (!isClickInside) {
-                document.getElementById('dropdownMenu3').classList.remove('show');
-            }
-        });
-        // Air India Experience
-        document.addEventListener('click', function (event) {
-            var isClickInside = document.getElementById('dropdownToggle4').contains(event.target) || document.getElementById('dropdownMenu4').contains(event.target);
-            if (!isClickInside) {
-                document.getElementById('dropdownMenu4').classList.remove('show');
-            }
-        });
-        // Maharaja Club
-        document.addEventListener('click', function (event) {
-            var isClickInside = document.getElementById('dropdownToggle5').contains(event.target) || document.getElementById('dropdownMenu5').contains(event.target);
-            if (!isClickInside) {
-                document.getElementById('dropdownMenu5').classList.remove('show');
-            }
-        });
-        
-        // document.addEventListener("DOMContentLoaded", function () {
-        //     var carousel = document.querySelector("#carouselExampleDark");
-
-         
-        // });
         document.addEventListener("DOMContentLoaded", function () {
-    console.log("DOM fully loaded");
-});
-        
-        console.log(document.querySelector(".dropdown-toggle"))
+            document.getElementById("dropdownToggle").addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent link default action
+                var dropdown = document.getElementById("dropdownMenu");
+                dropdown.classList.toggle("show");
+            });
+
+            document.addEventListener("click", function (event) {
+                var dropdown = document.getElementById("dropdownMenu");
+                var toggle = document.getElementById("dropdownToggle");
+
+                if (!toggle.contains(event.target) && !dropdown.contains(event.target)) {
+                    dropdown.classList.remove("show");
+                }
+            });
+        });
     </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
-<!-- Bootstrap JS (for Bootstrap 5) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 
 </body>
 
